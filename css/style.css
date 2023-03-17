@@ -1,0 +1,172 @@
+.timer_button {
+  width: 100px;
+  height: 50px;
+}
+
+.countup {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.countup .timeel {
+  display: inline-block;
+  padding: 10px;
+  background: #151515;
+  margin: 0;
+  color: white;
+  min-width: 2.6rem;
+  margin-left: 13px;
+  border-radius: 10px 0 0 10px;
+}
+
+.countup span[class*="timeRef"] {
+  border-radius: 0 10px 10px 0;
+  margin-left: 0;
+  background: #e72044;
+  color: #ffffff;
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+}
+
+.aos_section {
+  min-height: 300px;
+}
+
+/* ripplejs */
+.clicky {
+  position: relative;
+  height: 200px;
+  cursor: pointer;
+}
+
+/* parallax */
+.img {
+  height: 400px;
+  overflow: hidden;
+}
+
+.p_img {
+  max-width: 300px;
+}
+.p_img:nth-child(1) {
+  top: 0px;
+  left: 200px;
+}
+.p_img:nth-child(2) {
+  top: 200px;
+  left: 400px;
+}
+.p_img:nth-child(3) {
+  top: 200px;
+  left: 100px;
+}
+.p_img:nth-child(4) {
+  top: 400px;
+  left: 600px;
+}
+.p_img:nth-child(5) {
+  top: 500px;
+  left: 150px;
+}
+.p_img:nth-child(6) {
+  top: 600px;
+  left: 400px;
+}
+.p_img:nth-child(7) {
+  top: 800px;
+  left: 100px;
+}
+.p_img:nth-child(8) {
+  top: 800px;
+  left: 600px;
+}
+.p_img:nth-child(9) {
+  top: 1000px;
+  left: 300px;
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+/* lightgallery */
+
+.header .lead {
+  max-width: 620px;
+}
+
+.lg-toolbar-next:before {
+  content: "\e094";
+}
+.lg-toolbar-prev:before {
+  content: "\e095";
+}
+
+.gallery-item {
+  width: 200px;
+  padding: 5px;
+}
+
+/* slikslider */
+.slider {
+  width: 50%;
+  margin: 30px auto;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.s_img {
+  margin: 0 5px;
+}
+
+/* owl-careousel */
+.w_box {
+  min-width: 200px;
+  min-height: 200px;
+  margin: 0 10px;
+}
+
+/* mixitup */
+.menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.control {
+  display: inline-block;
+  min-height: 25px;
+  width: 80px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 15px 5px;
+}
+.all {
+  margin: 0;
+}
+.item {
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.control:active {
+  border: 2px black;
+  background-color: none;
+}
+
+/* loadmore */
+.l_box {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/* curvedtext */
+#text3 {
+  overflow: hidden;
+}

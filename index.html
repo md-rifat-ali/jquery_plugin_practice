@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>plugin practice</title>
+
+    <!-- icon link -->
+
+    <!-- fonts link -->
+
+    <!-- css link -->
+    <link
+      rel="stylesheet"
+      href="vendor/owlcarousel/dist/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="vendor/slick_slider/slick/slick.css" />
+    <link rel="stylesheet" href="vendor/slick_slider//slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/lightgallery/dist/css/lightgallery-bundle.min.css"
+    />
+    <link rel="stylesheet" href="vendor/aos/css/aos.css" />
+    <link rel="stylesheet" href="vendor/wowjs/css/animate.css" />
+    <link rel="stylesheet" href="vendor/flip/example/flip/flip.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">count-up</h1>
+      <div class="row mb-5">
+        <div class="col-lg-4">
+          <div class="item text-center bg-danger py-5 text-white rounded">
+            <h1><span class="counter">240</span><span>+</span></h1>
+            <p>Happy clients</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item text-center bg-danger py-5 text-white rounded">
+            <h1><span class="counter">550</span><span>+</span></h1>
+            <p>Project completed</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item text-center bg-danger py-5 text-white rounded">
+            <h1><span class="counter">1000</span><span>+</span></h1>
+            <p>Order completed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- clock -->
+    <div class="container">
+      <h1 class="text-center">time</h1>
+      <div
+        class="tick mb-5"
+        data-did-init="handleTickInit"
+        data-credits="false"
+      >
+        <div data-layout="horizontal fit">
+          <span
+            data-key="hours"
+            data-transform="pad(00)"
+            data-view="flip"
+          ></span>
+          <span data-view="text" data-key="sep" class="tick-text-inline"></span>
+          <span
+            data-key="minutes"
+            data-transform="pad(00)"
+            data-view="flip"
+          ></span>
+          <span data-view="text" data-key="sep" class="tick-text-inline"></span>
+          <span
+            data-key="seconds"
+            data-transform="pad(00)"
+            data-view="flip"
+          ></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- stopwatch -->
+    <div class="container">
+      <h1 class="text-center">stopwatch</h1>
+      <div class="countup" id="stopwatch">
+        <span id="hour" class="timeel hours">00</span>
+        <span class="timeel timeRefHours">hours</span>
+        <span id="min" class="timeel minutes">00</span>
+        <span class="timeel timeRefMinutes">minutes</span>
+        <span id="sec" class="timeel seconds">00</span>
+        <span class="timeel timeRefSeconds">seconds</span>
+      </div>
+    </div>
+
+    <div class="b_group text-center">
+      <button
+        class="timer_button btn text-center text-white bg-danger"
+        id="start_button"
+      >
+        Start
+      </button>
+      <button
+        class="timer_button btn text-center text-white bg-danger"
+        id="timer_submit"
+      >
+        Stop
+      </button>
+    </div>
+
+    <div class="text-center mb-5" id="total_time"></div>
+
+    <!-- wowjs -->
+    <h1 class="text-center">Animation</h1>
+    <section
+      class="wow slideInLeft"
+      data-wow-duration="1s"
+      data-wow-delay=".33s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="box bg-danger rounded"></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box bg-danger rounded"></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box bg-danger rounded"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- aos -->
+    <h1 class="text-center">AOS</h1>
+    <section
+      class="aos_section bg-danger"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    ></section>
+
+    <!-- ripplejs -->
+    <h1 class="text-center">Ripple</h1>
+    <div
+      class="clicky bg-danger text-white rounded d-flex align-items-center justify-content-center"
+    >
+      Click me
+    </div>
+
+    <!-- parallaxjs -->
+    <h1 class="text-center">Parallax</h1>
+    <img class="img img-fluid" src="images/img1.jpg" alt="" />
+
+    <!-- parallaxjs2 -->
+    <section class="parallaxjs2">
+      <img class="p_img img-fluid" src="images/img4.jpg" alt="" />
+      <img class="p_img img-fluid" src="images/img2.jpg" alt="" />
+      <img class="p_img img-fluid" src="images/img3.jpg" alt="" />
+      <img class="p_img img-fluid" src="images/img1.jpg" alt="" />
+      <img class="p_img img-fluid" src="images/img5.jpg" alt="" />
+      <img class="p_img img-fluid" src="images/img2.jpg" alt="" />
+      <img class="p_img img-fluid" src="images/img3.jpg" alt="" />
+      <img class="p_img img-fluid" src="images/img4.jpg" alt="" />
+      <img class="p_img img-fluid" src="images/img5.jpg" alt="" />
+    </section>
+
+    <!-- lightgallery -->
+    <section class="lightgallery">
+      <div class="header d-flex flex-column align-items-center">
+        <h1 class="mt-3 mb-0">lightGallery</h1>
+      </div>
+      <div
+        class="gallery-container d-flex align-items-center justify-content-center"
+        id="gallery-container"
+      >
+        <a
+          data-lg-size="1400-1400"
+          class="gallery-item"
+          data-src="images/a.jpeg"
+          data-sub-html=""
+        >
+          <img class="img-fluid" src="images/a_thumb.jpeg" />
+        </a>
+
+        <a
+          data-lg-size="1443-1329"
+          class="gallery-item"
+          data-src="images/b.jpeg"
+          data-sub-html=""
+        >
+          <img class="img-fluid" src="images/b_thumb.jpeg" />
+        </a>
+
+        <a
+          data-lg-size="1400-1402"
+          class="gallery-item"
+          data-src="images/c.jpeg"
+          data-sub-html=""
+        >
+          <img class="img-fluid" src="images/c_thumb.jpeg" />
+        </a>
+
+        <a
+          data-lg-size="1400-1402"
+          class="gallery-item"
+          data-src="images/d.jpeg"
+          data-sub-html=""
+        >
+          <img class="img-fluid" src="images/d_thumb.jpeg" />
+        </a>
+
+        <a
+          data-lg-size="1250-750"
+          class="gallery-item"
+          data-src="images/e.jpeg"
+          data-sub-html=""
+        >
+          <img class="img-fluid" src="images/e_thumb.jpeg" />
+        </a>
+      </div>
+    </section>
+
+    <!-- silkslider -->
+    <h1 class="text-center mt-3">Slick Slider</h1>
+    <section class="regular slider">
+      <div class="s_img">
+        <img class="img-fluid" src="images/a.jpeg" />
+      </div>
+      <div class="s_img">
+        <img class="img-fluid" src="images/b.jpeg" />
+      </div>
+      <div class="s_img">
+        <img class="img-fluid" src="images/c.jpeg" />
+      </div>
+      <div class="s_img">
+        <img class="img-fluid" src="images/d.jpeg" />
+      </div>
+      <div class="s_img">
+        <img class="img-fluid" src="images/e.jpeg" />
+      </div>
+      <div class="s_img">
+        <img class="img-fluid" src="images/coding.jpg" />
+      </div>
+    </section>
+    <!-- owl-caresousel -->
+    <section class="owl">
+      <h1 class="text-center mt-3">Owl-Carousel</h1>
+      <div class="owl-carousel owl-theme">
+        <div
+          class="bg-danger w_box rounded d-flex align-items-center justify-content-center"
+        >
+          1
+        </div>
+        <div
+          class="bg-danger w_box rounded d-flex align-items-center justify-content-center"
+        >
+          2
+        </div>
+        <div
+          class="bg-danger w_box rounded d-flex align-items-center justify-content-center"
+        >
+          3
+        </div>
+        <div
+          class="bg-danger w_box rounded d-flex align-items-center justify-content-center"
+        >
+          4
+        </div>
+        <div
+          class="bg-danger w_box rounded d-flex align-items-center justify-content-center"
+        >
+          5
+        </div>
+        <div
+          class="bg-danger w_box rounded d-flex align-items-center justify-content-center"
+        >
+          6
+        </div>
+        <div
+          class="bg-danger w_box rounded d-flex align-items-center justify-content-center"
+        >
+          7
+        </div>
+      </div>
+    </section>
+
+    <!-- mixitup -->
+
+    <h1 class="text-center">Mix-it-up</h1>
+    <section class="mixitup">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="menu">
+              <ul>
+                <li
+                  class="bg-success control text-center text-white all"
+                  data-filter="*"
+                >
+                  <span>All</span>
+                </li>
+                <li
+                  class="bg-danger control text-center text-white"
+                  data-filter=".red"
+                >
+                  <span>Danger</span>
+                </li>
+                <li
+                  class="control bg-info text-center text-white"
+                  data-filter=".blue"
+                >
+                  <span>Info</span>
+                </li>
+                <li
+                  class="control bg-dark text-center text-white"
+                  data-filter=".dark"
+                >
+                  <span>Dark</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row list">
+            <div class="col-lg-4 mix item box rounded blue bg-info info"></div>
+            <div class="col-lg-4 mix item box rounded bg-danger red"></div>
+            <div class="col-lg-4 mix item box rounded bg-dark dark"></div>
+            <div class="col-lg-4 mix item box rounded bg-danger red"></div>
+            <div class="col-lg-4 mix item box rounded dark bg-dark"></div>
+            <div class="col-lg-4 mix item box rounded blue bg-info info"></div>
+            <div class="col-lg-4 mix item box rounded blue info bg-info"></div>
+            <div class="col-lg-4 mix item box red rounded bg-danger"></div>
+            <div class="col-lg-4 mix item box dark bg-dark rounded"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- loadmore -->
+    <section class="loadmore">
+      <h1 class="text-center">LoadMore</h1>
+      <div class="some-list text-center">
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 1
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 2
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 3
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 4
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 5
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 6
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 7
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 8
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 9
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 10
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 11
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 12
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 13
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 14
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 15
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 16
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 17
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 18
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 19
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 20
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 21
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 22
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 23
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 24
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 25
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 26
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 27
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 28
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 29
+        </div>
+        <div
+          class="l_box bg-danger text-center text-white"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Some List Item 30
+        </div>
+      </div>
+    </section>
+
+    <!-- curvedtext -->
+    <h1 class="text-center">Curved Text</h1>
+    <div id="text3" class="bg-danger text-white">
+      But, what the heck is that? Well, that's a bezier curve!
+    </div>
+    <!-- js link -->
+    <script src="js/jquery.min.js"></script>
+
+    <script src="vendor/flip/example/flip/flip.min.js"></script>
+    <script src="vendor/counter_up/js/waypoints.min.js"></script>
+    <script src="vendor/counter_up/js/jquery.counterup.min.js"></script>
+    <script src="vendor/aos/js/aos.js"></script>
+    <script src="vendor/wowjs/js/wow.min.js"></script>
+    <script src="vendor/ripple_js/dist/yarp.min.js"></script>
+    <script src="vendor/parallax/parallax.js"></script>
+    <script src="vendor/parallax2/dist/jquery-parallax.js"></script>
+    <script src="vendor/lightgallery/dist/lightgallery.min.js"></script>
+    <script src="vendor/lightgallery/dist/lg-thumbnail.umd.js"></script>
+    <script src="vendor/lightgallery/dist/lg-zoom.umd.js"></script>
+    <script src="vendor/slick_slider/slick/slick.min.js"></script>
+    <script src="vendor/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="vendor/mixitup/dist/mixitup.min.js"></script>
+    <script src="vendor/curved_text/javascript/jquery.typorize.min.js"></script>
+    <script src="vendor/curved_text/javascript/jquery.curvedtext.min.js"></script>
+    <script src="vendor/loadmore/jquery.simpleLoadMore.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
